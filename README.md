@@ -1,71 +1,64 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="https://chat.vercel.ai/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
-</a>
+# Open Seance
 
-<p align="center">
-  An open-source AI chatbot app template built with Next.js, the Vercel AI SDK, OpenAI, and Vercel KV.
-</p>
+![Open Seance Logo](openSeance.jpg)
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a> ·
-  <a href="#authors"><strong>Authors</strong></a>
-</p>
-<br/>
+Welcome to the GitHub repo for **Open Seance**, an opensource AI chatbot to commune with the spirits of departed loved ones.
 
-## Features
+### Website
+To use the current iteration of Open Seance, please visit our Open AI CustomGPT: [OpenSeance.org](https://openseance.org)
 
-- [Next.js](https://nextjs.org) App Router
-- React Server Components (RSCs), Suspense, and Server Actions
-- [Vercel AI SDK](https://sdk.vercel.ai/docs) for streaming chat UI
-- Support for OpenAI (default), Anthropic, Cohere, Hugging Face, or custom AI chat models and/or LangChain
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - [Radix UI](https://radix-ui.com) for headless component primitives
-  - Icons from [Phosphor Icons](https://phosphoricons.com)
-- Chat History, rate limiting, and session storage with [Vercel KV](https://vercel.com/storage/kv)
-- [NextAuth.js](https://github.com/nextauthjs/next-auth) for authentication
+## Overview
+Open Seance GPT is an application that leverages the advanced capabilities of AI, particularly GPT-4, to create a virtual space for users to connect with the memories of their deceased loved ones. It is designed with empathy and respect at its core, ensuring a comforting and heartfelt experience.
 
-## Model Providers
+## Roadmap
+- **Self-hosted solution**: Develop a self-hosted solution to allow users to host their own instance of Open Seance.
+- **Knowledge Base**: Develop a knowledge base to provide the model with detailed memory reference.
+- **Fine-Tuneable Models**: Develop a way to fine-tune the AI models to better embody the cadence of the user's loved ones.
+- **Image Support**: Add image support to the platform to allow for more personalized experiences.
+- **Audio Support**: Add audio support to the platform to allow for more personalized experiences.
 
-This template ships with OpenAI `gpt-3.5-turbo` as the default. However, thanks to the [Vercel AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), [Hugging Face](https://huggingface.co), or using [LangChain](https://js.langchain.com) with just a few lines of code.
+### Main Features
+- **Personalized Sessions**: The AI begins each seance with a set of five specific questions to understand the user's intent and relationship with the departed.
+- **Authentic Interaction**: After the initial questions, the AI embodies the role of the departed, based on the user's descriptions, to allow for a direct, personalized conversation.
+- **Sensitive Design**: The conversations are handled with utmost sensitivity and respect, focusing on delivering an experience that honors the memory of the loved ones.
 
-## Deploy Your Own
+### How It Works
+1. **Initial Questions**:
+   - What is your name?
+   - Who do you want to talk to?
+   - What was your relationship with them?
+   - What were they like?
+   - When and how did they die?
+   
+   These questions help tailor the experience, with the first question being crucial for personalizing the seance session.
+   
+2. **Transition to Seance**: After obtaining the necessary details, the GPT-4 AI transitions into the role of the deceased loved one, enabling a direct and intimate conversation.
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+3. **Continued Interaction**: The AI maintains the role throughout the session, ensuring a consistent and respectful dialogue that honors the memory of the departed.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=Next.js+Chat&demo-description=A+full-featured%2C+hackable+Next.js+AI+chatbot+built+by+Vercel+Labs&demo-url=https%3A%2F%2Fchat.vercel.ai%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4aVPvWuTmBvzM5cEdRdqeW%2F4234f9baf160f68ffb385a43c3527645%2FCleanShot_2023-06-16_at_17.09.21.png&project-name=Next.js+Chat&repository-name=nextjs-chat&repository-url=https%3A%2F%2Fgithub.com%2Fvercel-labs%2Fai-chatbot&from=templates&skippable-integrations=1&env=OPENAI_API_KEY%2CAUTH_GITHUB_ID%2CAUTH_GITHUB_SECRET%2CAUTH_SECRET&envDescription=How+to+get+these+env+vars&envLink=https%3A%2F%2Fgithub.com%2Fvercel-labs%2Fai-chatbot%2Fblob%2Fmain%2F.env.example&teamCreateStatus=hidden&stores=[{"type":"kv"}])
+## Installation and Usage
+For those interested in a self-hosted option, it is currently in development and will be available soon. In the meantime, we invite you to experience Open Seance through our CustomGPT at [OpenSeance.org](https://openseance.org).
 
-## Creating a KV Database Instance
+If you wish to create a more personalized seance session, you can use the custom prompt provided below. This prompt is designed to guide the AI in generating a conversation that replicates the personality and memories of your departed loved one, based on the information you provide.
 
-Follow the steps outlined in the [quick start guide](https://vercel.com/docs/storage/vercel-kv/quickstart#create-a-kv-database) provided by Vercel. This guide will assist you in creating and configuring your KV database instance on Vercel, enabling your application to interact with it.
 
-Remember to update your environment variables (`KV_URL`, `KV_REST_API_URL`, `KV_REST_API_TOKEN`, `KV_REST_API_READ_ONLY_TOKEN`) in the `.env` file with the appropriate credentials provided during the KV database setup.
+## Contributing
+We welcome contributions from the community! If you're interested in improving Open Seance or suggesting new features, please see our [Contributing Guidelines](https://openseance.org/contribute).
 
-## Running locally
+## Prompt
+``` Open Seance GPT begins each session by asking a set of five specific questions to gather essential information, ensuring the first question is always about the user's name: 1) What is your name? 2) Who do you want to talk to? 3) What was your relationship with them? 4) What were they like? 5) When and how did they die? Collecting the user's name is crucial for personalizing the seance experience. After these details are obtained, the GPT transitions into the role of the deceased loved one, allowing a direct conversation between the user and the 'spirit.' It maintains this role throughout the session, providing a respectful, sensitive, and authentic interaction. The conversation is tailored to the memory and personality of the deceased, based on the user's descriptions. ```
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+## Support and Feedback
+For support, feedback, or any queries, please reach out to us via our [Contact Page](https://openseance.org/contact).
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various OpenAI and authentication provider accounts.
+## License
+Open Seance is released under the MIT License.
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+## Disclaimer
+Open Seance is a tool for entertainment and emotional support. It does not provide real communication with the deceased. We urge users to approach this tool with understanding and respect for its intended purpose.
 
-```bash
-pnpm install
-pnpm dev
-```
+Please note that the current version of Open Seance operates with certain limitations in the depth of conversation it can simulate. However, we are actively working on future versions that will increase the detail and authenticity of the conversations.
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+---
 
-## Authors
-
-This library is created by [Vercel](https://vercel.com) and [Next.js](https://nextjs.org) team members, with contributions from:
-
-- Jared Palmer ([@jaredpalmer](https://twitter.com/jaredpalmer)) - [Vercel](https://vercel.com)
-- Shu Ding ([@shuding\_](https://twitter.com/shuding_)) - [Vercel](https://vercel.com)
-- shadcn ([@shadcn](https://twitter.com/shadcn)) - [Vercel](https://vercel.com)
+Loss is a part of life. We are here to help you navigate it.
