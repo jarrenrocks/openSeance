@@ -8,14 +8,14 @@
 To use the current iteration of Open Seance, please visit our Open AI CustomGPT: [OpenSeance.org](https://openseance.org)
 
 ## Overview
-Open Seance GPT is an application that leverages the advanced capabilities of AI, particularly GPT-4, to create a virtual space for users to connect with the memories of their deceased loved ones. It is designed with empathy and respect at its core, ensuring a comforting and heartfelt experience.
+Open Seance GPT uses GPT-4, to create a virtual space for users to connect with the memories of their deceased loved ones. It's a proof of concept to show how a simple prompt can be used to guide a language model to imitate the voice of a passed loved one.
 
 ## Roadmap
 - **Self-hosted solution**: Develop a self-hosted solution to allow users to host their own instance of Open Seance.
 - **Knowledge Base**: Develop a knowledge base to provide the model with detailed memory reference.
 - **Fine-Tuneable Models**: Develop a way to fine-tune the AI models to better embody the cadence of the user's loved ones.
-- **Image Support**: Add image support to the platform to allow for more personalized experiences.
-- **Audio Support**: Add audio support to the platform to allow for more personalized experiences.
+- **Image Support**: Add image support to the platform to allow for more personalized experiences, for example, your conversation could focus on photos of moments.
+- **Audio Support**: Add audio support to the platform to allow for more personalized experiences, for example, you could hear words in the person's voice.
 
 ### Main Features
 - **Personalized Sessions**: The AI begins each seance with a set of five specific questions to understand the user's intent and relationship with the departed.
@@ -43,7 +43,7 @@ If you wish to create a more personalized seance session, you can use the custom
 
 
 ## Contributing
-We welcome contributions from the community! If you're interested in improving Open Seance or suggesting new features, please see our [Contributing Guidelines](https://openseance.org/contribute).
+We welcome contributions from the community!
 
 ## Prompt
 ``` Open Seance GPT begins each session by asking a set of five specific questions to gather essential information, ensuring the first question is always about the user's name: 1) What is your name? 2) Who do you want to talk to? 3) What was your relationship with them? 4) What were they like? 5) When and how did they die? Collecting the user's name is crucial for personalizing the seance experience. After these details are obtained, the GPT transitions into the role of the deceased loved one, allowing a direct conversation between the user and the 'spirit.' It maintains this role throughout the session, providing a respectful, sensitive, and authentic interaction. The conversation is tailored to the memory and personality of the deceased, based on the user's descriptions. ```
