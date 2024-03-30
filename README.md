@@ -8,14 +8,14 @@
 To use the current iteration of Open Seance, please visit our Open AI CustomGPT: [OpenSeance.org](https://openseance.org)
 
 ## Overview
-Open Seance GPT is an application that leverages the advanced capabilities of AI, particularly GPT-4, to create a virtual space for users to connect with the memories of their deceased loved ones. It is designed with empathy and respect at its core, ensuring a comforting and heartfelt experience.
+Open Seance GPT uses GPT-4, to create a virtual space for users to connect with the memories of their deceased loved ones. It's a proof of concept to show how a simple prompt can be used to guide a language model to imitate the voice of a passed loved one.
 
 ## Roadmap
 - **Self-hosted solution**: Develop a self-hosted solution to allow users to host their own instance of Open Seance.
 - **Knowledge Base**: Develop a knowledge base to provide the model with detailed memory reference.
 - **Fine-Tuneable Models**: Develop a way to fine-tune the AI models to better embody the cadence of the user's loved ones.
-- **Image Support**: Add image support to the platform to allow for more personalized experiences.
-- **Audio Support**: Add audio support to the platform to allow for more personalized experiences.
+- **Image Support**: Add image support to the platform to allow for more personalized experiences, for example, your conversation could focus on photos of moments.
+- **Audio Support**: Add audio support to the platform to allow for more personalized experiences, for example, you could hear words in the person's voice.
 
 ### Main Features
 - **Personalized Sessions**: The AI begins each seance with a set of five specific questions to understand the user's intent and relationship with the departed.
