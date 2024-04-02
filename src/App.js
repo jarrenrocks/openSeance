@@ -8,7 +8,7 @@ function App() {
     <Routes>
       <Route path="/" element={
         <div className="min-h-screen bg-black flex flex-col justify-center items-center">
-          <header className="text-center flex flex-col items-center">
+          <header className="text-center flex flex-col justify-center items-center max-w-lg">
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="text-4xl font-bold text-white mb-4">Open Seance</h1>
             <p className="text-lg text-white">
@@ -16,9 +16,11 @@ function App() {
 
             </p>
             <p className="text-sm text-white opacity-60 mb-20">
-              Building Open Source Grief Tech tools for public use. 
-              <br />
-              Now in alpha.
+              An Open Source Grief Tech tool for public use. 
+              <br /> <br />
+              Open Seance is an AI chatbot that recreates the conversations of passed family and friends using details about their life.
+              <br /> <br />
+              Launching in early alpha.
             </p>
             <div className="flex items-top space-x-10 h-38">
               <div className='mt-2'>
@@ -33,12 +35,15 @@ function App() {
             </div>
           </header>
           <div className="fixed bottom-0 right-0 m-4 p-4 bg-black bg-opacity-50 rounded-lg text-white flex items-center justify-auto">
-          Jarren Rocks. &nbsp;
-             Previous Seance AI work featured in &nbsp;
+          By Jarren Rocks &nbsp; / &nbsp;
+             Previous Seance AI work featured in: &nbsp;
               <Link to="https://www.vox.com/culture/23965584/grief-tech-ghostbots-ai-startups-replika-ethics" className="underline">
-                Vox News
-              </Link> &nbsp; - &nbsp; <Link to="https://futurism.com/ai-seance" className="underline">
+                Vox
+              </Link> &nbsp; / &nbsp; <Link to="https://futurism.com/ai-seance" className="underline">
                 Futurism
+              </Link>
+              &nbsp; / &nbsp; <Link to="https://www.foxnews.com/tech/digital-seance-new-ai-tech-will-mimic-speaking-to-dead-family-friendse" className="underline">
+                Fox News
               </Link>
         
       </div>
